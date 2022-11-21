@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="main.css">
+   <title>電卓</title>
+ </head>
+
+ <body>
+   <div id="container">
+     <div id="result">0</div>
+     <table>
+       <tbody>
+         <tr>
+           <td><button onclick="calculate(this)">7</button></td>
+           <td><button onclick="calculate(this)">8</button></td>
+           <td><button onclick="calculate(this)">9</button></td>
+           <td><button onclick="calculate(this), enablePoint()">+</button></td>
+         </tr>
+         <tr>
+           <td><button onclick="calculate(this)">4</button></td>
+           <td><button onclick="calculate(this)">5</button></td>
+           <td><button onclick="calculate(this)">6</button></td>
+           <td><button onclick="calculate(this), enablePoint()">-</button></td>
+         </tr>
+         <tr>
+           <td><button onclick="calculate(this)">1</button></td>
+           <td><button onclick="calculate(this)">2</button></td>
+           <td><button onclick="calculate(this)">3</button></td>
+           <td><button onclick="calculate(this), enablePoint()">*</button></td>
+         </tr>
+         <tr>
+           <td><button onclick="calculate(this)">0</button></td>
+           <td><button onclick="calculate(this)">00</button></td>
+           <td><button id="point" onclick="calculate(this), disblePoint()">.</button></td>
+           <td><button onclick="calculate(this), enablePoint()">/</button></td>
+         </tr>
+         <tr>
+           <td colspan="2"><button onclick="calculate(this), enablePoint()">AC</button></td>
+           <td colspan="2"><button onclick="calculate(this)">=</button></td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+
+   <script src="main.js"></script>
+ </body>
+
+ </html>
+ 
